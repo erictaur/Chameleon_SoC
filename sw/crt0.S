@@ -113,7 +113,7 @@ irq0_hand:
 .global __mulsi3
 __mulsi3:
         #ext_mul(10, 10, 11)
-		la	t0, 0x49000000
+		li	t0, 0x49000000
 		sw	a0, 0(t0)
 		sw	a1, 4(t0)
 		lw	a0, 0(t0)
